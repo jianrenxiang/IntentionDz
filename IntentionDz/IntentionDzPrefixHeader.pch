@@ -1,0 +1,18 @@
+//
+//  IntentionDzPrefixHeader.pch
+//  IntentionDz
+//
+//  Created by EWSAPPLE on 16/11/15.
+//  Copyright © 2016年 com.ews. All rights reserved.
+//
+
+#ifndef IntentionDzPrefixHeader_pch
+#define IntentionDzPrefixHeader_pch
+
+#import "DZDefaultHeader.h"
+#import "UIView+Frame.h"
+#import "NHCommonAPIConstant.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* IntentionDzPrefixHeader_pch */
