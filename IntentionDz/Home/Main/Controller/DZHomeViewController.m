@@ -11,9 +11,12 @@
 #import "NHServiceListModel.h"
 #import "DZHomeHeaderOptionView.h"
 #import "DZCustomSlideViewController.h"
+#import "DZHomeBaseViewController.h"
+#import "DZCustomWebViewController.h"
 @interface DZHomeViewController ()<DZCustomSlideControllerDataSoure,DZCustomSlideControllerDelegate>
 @property(nonatomic,weak)DZHomeHeaderOptionView *optionalView;
 @property(nonatomic,weak)DZCustomSlideViewController *slideViewController;
+@property(nonatomic,strong)NSMutableArray *controllers;
 @property(nonatomic,strong)NSMutableArray *titles;
 @property(nonatomic,strong)NSMutableArray *urls;
 @end
@@ -29,6 +32,13 @@
         optional.backgroundColor=kWhiteColor;
     }
     return _optionalView;
+}
+
+-(NSMutableArray*)controllers{
+    if (!_controllers) {
+        _controllers=[NSMutableArray array];
+    }
+    return _controllers;
 }
 
 -(NSMutableArray*)titles{
@@ -72,6 +82,8 @@
     return _slideViewController;
 }
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     //设置导航栏
@@ -107,9 +119,11 @@
         if ([title isEqual:@"游戏"]) {
             NSLog(@"网页加载中....");
         }else if ([title isEqualToString:@"精华"]){
-            
+            DZCustomWebViewController *webView=[[DZCustomWebViewController alloc]init];
+            [self.controllers addObject:webView];
         }else{
-            
+            DZHomeBaseViewController *homeBase=[[DZHomeBaseViewController alloc]init];
+            [self.controllers addObject:homeBase];
         }
     }
     if ([self.titles containsObject:@"精华"]) {
@@ -120,7 +134,7 @@
     self.optionalView.homeHeaderOpetionalViewItemClickHandle=^(DZHomeHeaderOptionView *optionView,NSString *title,NSInteger currentIndex){
         weakSelf.slideViewController.selectIndex=currentIndex;
     };
-    
+    [self.slideViewController reloadDate];
 }
 
 
@@ -137,6 +151,18 @@
     };
     
     
+}
+#pragma mark--
+-(NSInteger)numberofChildViewControllerInSlideViewController:(DZCustomSlideViewController *)slideViewController{
+    return self.titles.count;
+}
+
+-(UIViewController*)slideViewController:(DZCustomSlideViewController *)slideViewController viewControllerAtIndex:(NSInteger)index{
+    return self.controllers[index];
+}
+
+-(void)customSlideViewController:(DZCustomSlideViewController *)slideViewController slideOffset:(CGPoint)slideOffset{
+    self.optionalView.contentOffset=slideOffset;
 }
 
 - (void)didReceiveMemoryWarning {
