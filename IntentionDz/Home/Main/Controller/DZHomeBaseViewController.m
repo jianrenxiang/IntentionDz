@@ -13,6 +13,7 @@
 #import "DZHomeServiceDataModel.h"
 #import "DZHomeTopTipView.h"
 #import "DZHomeTableViewCellFrame.h"
+#import "DZHomeTableViewCell.h"
 #define kTipTopViewH 30
 @interface DZHomeBaseViewController ()
 @property(nonatomic,copy)NSString *url;
@@ -126,6 +127,20 @@
         _topTipView=topTipView;
     }
     return _topTipView;
+}
+
+-(NSInteger)nh_numberOfSections{
+    return 1;
+}
+
+-(DZBaseTableViewCell*)nh_cellAtIndexPath:(NSIndexPath *)indexPath{
+    DZHomeTableViewCell *cell=[DZHomeTableViewCell cellWithTableView:self.tableView];
+    DZHomeTableViewCellFrame *cellFrame=self.cellFrameArray[indexPath.row];
+    return cell;
+}
+
+-(NSInteger)nh_numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
 }
 
 - (void)didReceiveMemoryWarning {

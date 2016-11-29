@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09F45281141D7FF200424256 /* libPods-IntentionDz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A98705B3D57987DFA9CA4D /* libPods-IntentionDz.a */; };
+		184305A71DEDA3C500B99863 /* NHBaseTableHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184305A61DEDA3C500B99863 /* NHBaseTableHeaderFooterView.m */; };
+		184305AA1DEDA5EA00B99863 /* DZHomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 184305A91DEDA5EA00B99863 /* DZHomeTableViewCell.m */; };
 		820BB6E11DDED1DE00AF6A18 /* DZHomeBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 820BB6E01DDED1DE00AF6A18 /* DZHomeBaseViewController.m */; };
 		821402851DD9481600BEE691 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 821402841DD9481600BEE691 /* main.m */; };
 		821402881DD9481600BEE691 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 821402871DD9481600BEE691 /* AppDelegate.m */; };
@@ -87,6 +89,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184305A51DEDA3C500B99863 /* NHBaseTableHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBaseTableHeaderFooterView.h; sourceTree = "<group>"; };
+		184305A61DEDA3C500B99863 /* NHBaseTableHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseTableHeaderFooterView.m; sourceTree = "<group>"; };
+		184305A81DEDA5EA00B99863 /* DZHomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeTableViewCell.h; sourceTree = "<group>"; };
+		184305A91DEDA5EA00B99863 /* DZHomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeTableViewCell.m; sourceTree = "<group>"; };
 		40A698D410D5B083F942777A /* Pods-IntentionDz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionDz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntentionDz/Pods-IntentionDz.debug.xcconfig"; sourceTree = "<group>"; };
 		5C915948F18A8DBB28BCCDFE /* Pods-IntentionDz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntentionDz.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntentionDz/Pods-IntentionDz.release.xcconfig"; sourceTree = "<group>"; };
 		820BB6DF1DDED1DE00AF6A18 /* DZHomeBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeBaseViewController.h; sourceTree = "<group>"; };
@@ -383,6 +389,8 @@
 		825075471DDA979C006C81F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				184305A51DEDA3C500B99863 /* NHBaseTableHeaderFooterView.h */,
+				184305A61DEDA3C500B99863 /* NHBaseTableHeaderFooterView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -817,6 +825,8 @@
 				828C5DE81DDC0B6400081C9A /* NHHomeHeaderOptionViewItemView.m */,
 				82807F611DED663600F03FBE /* DZHomeTopTipView.h */,
 				82807F621DED663600F03FBE /* DZHomeTopTipView.m */,
+				184305A81DEDA5EA00B99863 /* DZHomeTableViewCell.h */,
+				184305A91DEDA5EA00B99863 /* DZHomeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1351,6 +1361,7 @@
 				826A03711DDC572E0075D8AF /* DZServiceListRequest.m in Sources */,
 				826A03671DDC53FC0075D8AF /* NSString+Addition.m in Sources */,
 				82D62F451DDD83EA004BC4FE /* DZBaseViewController.m in Sources */,
+				184305AA1DEDA5EA00B99863 /* DZHomeTableViewCell.m in Sources */,
 				82C2F8471DDD3DC800CDD92C /* NHBaseModel.m in Sources */,
 				826A03631DDC53FC0075D8AF /* NSObject+AutoCoding.m in Sources */,
 				828C5DEC1DDC35B200081C9A /* DZBaseRequest.m in Sources */,
@@ -1367,6 +1378,7 @@
 				826A03621DDC53FC0075D8AF /* NSObject+AppInfo.m in Sources */,
 				825075A81DDAB719006C81F4 /* DZCustomSementView.m in Sources */,
 				82C2F84A1DDD40E900CDD92C /* DZFileCacheManager.m in Sources */,
+				184305A71DEDA3C500B99863 /* NHBaseTableHeaderFooterView.m in Sources */,
 				82807ED01DED119300F03FBE /* DZHomeListRequest.m in Sources */,
 				825075AE1DDABAE4006C81F4 /* UIView+Layer.m in Sources */,
 				8251D5AD1DEC037500127018 /* DZBaseTableViewController.m in Sources */,

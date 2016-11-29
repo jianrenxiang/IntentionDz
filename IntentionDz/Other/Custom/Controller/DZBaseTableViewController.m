@@ -7,6 +7,8 @@
 //
 
 #import "DZBaseTableViewController.h"
+#import "DZBaseTableViewCell.h"
+#import "NHBaseTableHeaderFooterView.h"
 #import <objc/runtime.h>
 #import "MJExtension.h"
 #import "UIView+Layer.h"
@@ -99,7 +101,11 @@ const char NHBaseTableVcNavLeftItemHandleKey;
     [self.refreshImg.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
 
-
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    self.tableView.frame=self.view.bounds;
+    [self.view sendSubviewToBack:self.tableView];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -207,6 +213,101 @@ const char NHBaseTableVcNavLeftItemHandleKey;
     _navItemTitle=navItemTitle.copy;
     self.navigationItem.title=navItemTitle;
 }
+
+-(void)setHiddenStatusBar:(BOOL)hiddenStatusBar{
+    _hiddenStatusBar=hiddenStatusBar;
+    [self setNeedsStatusBarAppearanceUpdate];
+}
+
+#pragma mark ---tableViewDelegate
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    if ([self respondsToSelector:@selector(nh_numberOfSections)]) {
+        return [self nh_numberOfSections];
+    }
+    return 0;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    if ([self respondsToSelector:@selector(nh_numberOfRowsInSection:)]) {
+        return [self nh_numberOfRowsInSection:section];
+    }
+    return 0;
+}
+
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    if ([self respondsToSelector:@selector(nh_headerAtSection:)]) {
+        return [self nh_headerAtSection:section];
+    }
+    return nil;
+}
+
+-(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    if ([self respondsToSelector:@selector(nh_footerAtSection::)]) {
+        return [self nh_footerAtSection:section];
+    }
+    return nil;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self respondsToSelector:@selector(nh_cellAtIndexPath:)]) {
+        return [self nh_cellAtIndexPath:indexPath];
+    }
+    DZBaseTableViewCell *cell=[DZBaseTableViewCell cellWithTableView:self.tableView];
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DZBaseTableViewCell *cell=[tableView cellForRowAtIndexPath:indexPath];
+    if ([self respondsToSelector:@selector(nh_didSelectCellAtIndexPath:cell:)]) {
+        [self nh_didSelectCellAtIndexPath:indexPath cell:cell];
+    }
+}
+// 每一行的高度
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self respondsToSelector:@selector(nh_cellheightAtIndexPath:)]) {
+        return [self nh_cellheightAtIndexPath:indexPath];
+    }
+    return tableView.rowHeight;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    if ([self respondsToSelector:@selector(nh_sectionHeaderHeightAtSection:)]) {
+        return [self nh_sectionHeaderHeightAtSection:section];
+    }
+    return 0.01;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    if ([self respondsToSelector:@selector(nh_sectionFooterHeightAtSection:)]) {
+        return [self nh_sectionFooterHeightAtSection:section];
+    }
+    return 0.01;
+}
+
+- (NSInteger)nh_numberOfSections { return 0; }
+
+- (NSInteger)nh_numberOfRowsInSection:(NSInteger)section { return 0; }
+
+- (UITableViewCell *)nh_cellAtIndexPath:(NSIndexPath *)indexPath { return [DZBaseTableViewCell cellWithTableView:self.tableView]; }
+
+- (CGFloat)nh_cellheightAtIndexPath:(NSIndexPath *)indexPath { return 0; }
+
+- (void)nh_didSelectCellAtIndexPath:(NSIndexPath *)indexPath cell:(DZBaseTableViewCell *)cell { }
+
+- (UIView *)nh_headerAtSection:(NSInteger)section { return [NHBaseTableHeaderFooterView headerFooterViewWithTableView:self.tableView]; }
+
+- (UIView *)nh_footerAtSection:(NSInteger)section { return [NHBaseTableHeaderFooterView headerFooterViewWithTableView:self.tableView]; }
+
+- (CGFloat)nh_sectionHeaderHeightAtSection:(NSInteger)section { return 0.01; }
+
+- (CGFloat)nh_sectionFooterHeightAtSection:(NSInteger)section { return 0.01; }
+
+- (UIEdgeInsets)nh_sepEdgeInsetsAtIndexPath:(NSIndexPath *)indexPath { return UIEdgeInsetsMake(0, 15, 0, 0); }
+
+- (void)dealloc { [[NSNotificationCenter defaultCenter] removeObserver:self]; }
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
