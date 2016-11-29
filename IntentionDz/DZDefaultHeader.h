@@ -23,6 +23,8 @@
 #define kSegmentNormalColor [UIColor colorWithRed:0.42f green:0.33f blue:0.27f alpha:1.00f]
 #define kCommonBgColor [UIColor colorWithRed:0.86f green:0.85f blue:0.80f alpha:1.00f]
 #define kRGBAColor(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define kTextColor [UIColor colorWithRed:0.32f green:0.36f blue:0.40f alpha:1.00f]
+#define kCommonHighLightRedColor [UIColor colorWithRed:1.00f green:0.49f blue:0.65f alpha:1.00f]
 #define kRGBColor(r,g,b) kRGBAColor(r,g,b,1.0f)
 #define kSeperatorColor kRGBColor(234,237,240)
 #define kLeftMargin 15

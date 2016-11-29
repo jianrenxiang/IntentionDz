@@ -6,8 +6,16 @@
 //  Copyright © 2016年 com.ews. All rights reserved.
 //
 
-#import "DZBaseViewController.h"
+#import "DZBaseTableViewController.h"
 
-@interface DZHomeBaseViewController : DZBaseViewController
+@class DZBaseRequest;
+@interface DZHomeBaseViewController :DZBaseTableViewController
+
+-(instancetype)initWithUrl:(NSString *)url;
+
+-(instancetype)initWitnRequest:(DZBaseRequest *)request;
+
+@property(nonatomic,copy) void (^hoemBaseControllerFinishRequestDataHandle)(NSInteger dataCount);
+
 
 @end

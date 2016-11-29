@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DZBaseViewController : UIViewController
-
+/** 加载中*/
+- (void)showLoadingAnimation;
 @end

@@ -117,12 +117,13 @@
         NSString *url=self.urls[i];
         NSString *title=self.titles[i];
         if ([title isEqual:@"游戏"]) {
-            NSLog(@"网页加载中....");
+            DZCustomWebViewController  *webController=[[DZCustomWebViewController alloc]init];
+            [self.controllers addObject:webController];
         }else if ([title isEqualToString:@"精华"]){
             DZCustomWebViewController *webView=[[DZCustomWebViewController alloc]init];
             [self.controllers addObject:webView];
         }else{
-            DZHomeBaseViewController *homeBase=[[DZHomeBaseViewController alloc]init];
+            DZHomeBaseViewController *homeBase=[[DZHomeBaseViewController alloc]initWithUrl:url];
             [self.controllers addObject:homeBase];
         }
     }
