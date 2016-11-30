@@ -13,4 +13,21 @@
 + (void)beginPullRefreshForScrollView:(UIScrollView *)scrollView;
 /**  停止下拉刷新 */
 + (void)endRefreshForScrollView:(UIScrollView *)scrollView;
+/**
+ *  公共富文本
+ */
++ (NSAttributedString *)attStringWithString:(NSString *)string keyWord:(NSString *)keyWord;
+
++ (NSAttributedString *)attStringWithString:(NSString *)string
+                                    keyWord:(NSString *)keyWord
+                                       font:(UIFont *)font
+                           highlightedColor:(UIColor *)highlightedcolor
+                                  textColor:(UIColor *)textColor;
+
++ (NSAttributedString *)attStringWithString:(NSString *)string
+                                    keyWord:(NSString *)keyWord
+                                       font:(UIFont *)font
+                           highlightedColor:(UIColor *)highlightedcolor
+                                  textColor:(UIColor *)textColor
+                                  lineSpace:(CGFloat)lineSpace;
 @end

@@ -8,6 +8,8 @@
 
 #import "DZBaseViewController.h"
 #import "DZCustomLoadingAnimationView.h"
+#import "NSNotificationCenter+Addition.h"
+#import "DZCommonConstant.h"
 @interface DZBaseViewController ()
 @property (nonatomic, weak) DZCustomLoadingAnimationView *animationView;
 @end
@@ -28,8 +30,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets=NO;
+    self.edgesForExtendedLayout=UIRectEdgeAll;
+    self.view.backgroundColor = [UIColor colorWithRed:0.94f green:0.94f blue:0.94f alpha:1.00f];
+    [NSNotificationCenter addObserver:self action:@selector(requestSuccessNotification) name:kDZRequestSuccessNotification];
     
 }
+
+-(void)requestSuccessNotification{
+    [self hideLoadingAnimation];
+}
+
 
 -(void)showLoadingAnimation{
     DZCustomLoadingAnimationView *loadAnimation=[[DZCustomLoadingAnimationView alloc]init];
@@ -37,7 +47,10 @@
     _animationView=loadAnimation;
     [self.view bringSubviewToFront:loadAnimation];
 }
-
+- (void)hideLoadingAnimation {
+    [_animationView dissmiss];
+    _animationView = nil;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

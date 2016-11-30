@@ -14,8 +14,10 @@
 #import "DZHomeTopTipView.h"
 #import "DZHomeTableViewCellFrame.h"
 #import "DZHomeTableViewCell.h"
+#import "MJPhoto.h"
+#import "MJPhotoBrowser.h"
 #define kTipTopViewH 30
-@interface DZHomeBaseViewController ()
+@interface DZHomeBaseViewController ()<DZHomeTableViewCellDelegate>
 @property(nonatomic,copy)NSString *url;
 @property(nonatomic,strong)DZBaseRequest *request;
 @property (nonatomic, strong) NSMutableArray *cellFrameArray;
@@ -61,9 +63,11 @@
         self.request=request;
         [self loadData];
     }else{
-        
+        [self loadData];
     }
 }
+
+
 //加载动画
 -(void)loadData{
     if (self.request) {
@@ -133,9 +137,17 @@
     return 1;
 }
 
+-(CGFloat)nh_cellheightAtIndexPath:(NSIndexPath *)indexPath{
+    DZHomeTableViewCellFrame *cellFrame=self.cellFrameArray[indexPath.row];
+    return cellFrame.cellHeight;
+}
+
 -(DZBaseTableViewCell*)nh_cellAtIndexPath:(NSIndexPath *)indexPath{
     DZHomeTableViewCell *cell=[DZHomeTableViewCell cellWithTableView:self.tableView];
     DZHomeTableViewCellFrame *cellFrame=self.cellFrameArray[indexPath.row];
+    cell.cellFrame=cellFrame;
+    cell.delegate=self;
+    cell.isFromHomeController=YES;
     return cell;
 }
 
@@ -146,6 +158,23 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark--cellDelegate
+-(void)homeTableViewCell:(DZHomeTableViewCell *)cell didClickImage:(UIImageView *)imageView currentIndex:(NSInteger)currentIndex urls:(NSArray<NSURL *> *)urls{
+    MJPhotoBrowser *photoBrower=[[MJPhotoBrowser alloc]init];
+    NSMutableArray *phoneArray=[NSMutableArray new];
+    for (NSURL *imageUrl in urls) {
+        MJPhoto *phone=({
+            MJPhoto *phone=[[MJPhoto alloc]init];
+            phone.url=imageUrl;
+            phone.srcImageView=imageView;
+        });
+        [phoneArray addObject:phone];
+    }
+    photoBrower.photos=phoneArray;
+    photoBrower.currentPhotoIndex=currentIndex;
+    [photoBrower show];
 }
 
 /*

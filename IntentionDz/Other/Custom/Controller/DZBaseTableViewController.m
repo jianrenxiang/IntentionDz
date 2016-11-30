@@ -37,6 +37,8 @@ const char NHBaseTableVcNavLeftItemHandleKey;
 -(DZBaseTabelView*)tableView{
     if (!_tableView) {
         DZBaseTabelView *tab=[[DZBaseTabelView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        [self.view addSubview:tab];
+        _tableView=tab;
         tab.dataSource=self;
         tab.delegate=self;
         tab.backgroundColor=[UIColor colorWithRed:0.94f green:0.94f blue:0.94f alpha:1.00f];
@@ -243,7 +245,7 @@ const char NHBaseTableVcNavLeftItemHandleKey;
 }
 
 -(UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    if ([self respondsToSelector:@selector(nh_footerAtSection::)]) {
+    if ([self respondsToSelector:@selector(nh_footerAtSection:)]) {
         return [self nh_footerAtSection:section];
     }
     return nil;
@@ -314,14 +316,5 @@ const char NHBaseTableVcNavLeftItemHandleKey;
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
