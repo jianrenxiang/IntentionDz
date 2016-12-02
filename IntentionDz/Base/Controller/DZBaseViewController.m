@@ -51,6 +51,14 @@
     [_animationView dissmiss];
     _animationView = nil;
 }
+- (void)pushVc:(UIViewController *)vc {
+    if ([vc isKindOfClass:[UIViewController class]] == NO) return ;
+    if (self.navigationController == nil) return ;
+    if (vc.hidesBottomBarWhenPushed == NO) {
+        vc.hidesBottomBarWhenPushed = YES;
+    }
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

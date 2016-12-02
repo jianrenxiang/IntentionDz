@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "311051CE4E7A097FCF40F394FD12446054907FF9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "4b773df9-da60-49a5-9b2b-43371828d181++8903" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4b773df9-da60-49a5-9b2b-43371828d181++8903" : 0,
+    "311051CE4E7A097FCF40F394FD12446054907FF9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A9A96F2A-D1DB-4D04-ACB1-F125B785F9DC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4b773df9-da60-49a5-9b2b-43371828d181++8903" : "IntentionDz\/IntentionDz\/Other\/Vendor\/FXBlurView\/",
+    "311051CE4E7A097FCF40F394FD12446054907FF9" : "IntentionDz\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "IntentionDz",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "IntentionDz.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/jianrenxiang\/IntentionDz.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "311051CE4E7A097FCF40F394FD12446054907FF9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/101.200.174.143\/iOSNew",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4b773df9-da60-49a5-9b2b-43371828d181++8903"
+    }
+  ]
+}

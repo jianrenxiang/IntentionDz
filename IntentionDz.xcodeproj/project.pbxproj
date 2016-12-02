@@ -83,8 +83,19 @@
 		828C5DEF1DDC3CB500081C9A /* DZRquestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C5DEE1DDC3CB500081C9A /* DZRquestManager.m */; };
 		82C2F8471DDD3DC800CDD92C /* NHBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C2F8461DDD3DC800CDD92C /* NHBaseModel.m */; };
 		82C2F84A1DDD40E900CDD92C /* DZFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C2F8491DDD40E900CDD92C /* DZFileCacheManager.m */; };
+		82C9BDB11DF110F20006F788 /* DZDynamicDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C9BDB01DF110F20006F788 /* DZDynamicDetailRequest.m */; };
+		82C9BDB41DF125070006F788 /* DZDynamicDetailCommentCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C9BDB31DF125070006F788 /* DZDynamicDetailCommentCellFrame.m */; };
+		82C9BDB71DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C9BDB61DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m */; };
 		82D62F451DDD83EA004BC4FE /* DZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D62F441DDD83EA004BC4FE /* DZBaseViewController.m */; };
 		82D62F481DDD9602004BC4FE /* DZCustomSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D62F471DDD9602004BC4FE /* DZCustomSlideViewController.m */; };
+		82EB3AE81DEFB3B300335923 /* NHCustomActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AE71DEFB3B300335923 /* NHCustomActionSheet.m */; };
+		82EB3AEB1DEFB3F600335923 /* NHDownloadImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AEA1DEFB3F600335923 /* NHDownloadImageManager.m */; };
+		82EB3AEE1DEFB56600335923 /* MBProgressHUD+NHAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AED1DEFB56600335923 /* MBProgressHUD+NHAddition.m */; };
+		82EB3AF11DEFBC2300335923 /* DZCustomAleartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AF01DEFBC2300335923 /* DZCustomAleartView.m */; };
+		82EB3AF51DEFC38800335923 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AF41DEFC38800335923 /* FXBlurView.m */; };
+		82EB3AF81DEFCCD000335923 /* DZAnimationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AF71DEFCCD000335923 /* DZAnimationManager.m */; };
+		82EB3AFB1DEFD4D400335923 /* DZHomeDynamicRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AFA1DEFD4D400335923 /* DZHomeDynamicRequest.m */; };
+		82EB3AFE1DEFF6C600335923 /* DZDynamicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82EB3AFD1DEFF6C600335923 /* DZDynamicDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,10 +269,32 @@
 		82C2F8461DDD3DC800CDD92C /* NHBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseModel.m; sourceTree = "<group>"; };
 		82C2F8481DDD40E900CDD92C /* DZFileCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFileCacheManager.h; sourceTree = "<group>"; };
 		82C2F8491DDD40E900CDD92C /* DZFileCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFileCacheManager.m; sourceTree = "<group>"; };
+		82C9BDAF1DF110F20006F788 /* DZDynamicDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDynamicDetailRequest.h; sourceTree = "<group>"; };
+		82C9BDB01DF110F20006F788 /* DZDynamicDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDynamicDetailRequest.m; sourceTree = "<group>"; };
+		82C9BDB21DF125070006F788 /* DZDynamicDetailCommentCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDynamicDetailCommentCellFrame.h; sourceTree = "<group>"; };
+		82C9BDB31DF125070006F788 /* DZDynamicDetailCommentCellFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDynamicDetailCommentCellFrame.m; sourceTree = "<group>"; };
+		82C9BDB51DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDynamicDetailCommentTableViewCell.h; sourceTree = "<group>"; };
+		82C9BDB61DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDynamicDetailCommentTableViewCell.m; sourceTree = "<group>"; };
 		82D62F431DDD83EA004BC4FE /* DZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZBaseViewController.h; sourceTree = "<group>"; };
 		82D62F441DDD83EA004BC4FE /* DZBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZBaseViewController.m; sourceTree = "<group>"; };
 		82D62F461DDD9602004BC4FE /* DZCustomSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCustomSlideViewController.h; sourceTree = "<group>"; };
 		82D62F471DDD9602004BC4FE /* DZCustomSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCustomSlideViewController.m; sourceTree = "<group>"; };
+		82EB3AE61DEFB3B300335923 /* NHCustomActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NHCustomActionSheet.h; path = ../../NHCustomActionSheet.h; sourceTree = "<group>"; };
+		82EB3AE71DEFB3B300335923 /* NHCustomActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NHCustomActionSheet.m; path = ../../NHCustomActionSheet.m; sourceTree = "<group>"; };
+		82EB3AE91DEFB3F600335923 /* NHDownloadImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDownloadImageManager.h; sourceTree = "<group>"; };
+		82EB3AEA1DEFB3F600335923 /* NHDownloadImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDownloadImageManager.m; sourceTree = "<group>"; };
+		82EB3AEC1DEFB56600335923 /* MBProgressHUD+NHAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NHAddition.h"; sourceTree = "<group>"; };
+		82EB3AED1DEFB56600335923 /* MBProgressHUD+NHAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NHAddition.m"; sourceTree = "<group>"; };
+		82EB3AEF1DEFBC2300335923 /* DZCustomAleartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCustomAleartView.h; sourceTree = "<group>"; };
+		82EB3AF01DEFBC2300335923 /* DZCustomAleartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCustomAleartView.m; sourceTree = "<group>"; };
+		82EB3AF31DEFC38800335923 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		82EB3AF41DEFC38800335923 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		82EB3AF61DEFCCD000335923 /* DZAnimationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAnimationManager.h; sourceTree = "<group>"; };
+		82EB3AF71DEFCCD000335923 /* DZAnimationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAnimationManager.m; sourceTree = "<group>"; };
+		82EB3AF91DEFD4D400335923 /* DZHomeDynamicRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeDynamicRequest.h; sourceTree = "<group>"; };
+		82EB3AFA1DEFD4D400335923 /* DZHomeDynamicRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeDynamicRequest.m; sourceTree = "<group>"; };
+		82EB3AFC1DEFF6C600335923 /* DZDynamicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDynamicDetailViewController.h; sourceTree = "<group>"; };
+		82EB3AFD1DEFF6C600335923 /* DZDynamicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDynamicDetailViewController.m; sourceTree = "<group>"; };
 		B4A98705B3D57987DFA9CA4D /* libPods-IntentionDz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IntentionDz.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -798,6 +831,8 @@
 		825075731DDA979C006C81F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				82EB3AFC1DEFF6C600335923 /* DZDynamicDetailViewController.h */,
+				82EB3AFD1DEFF6C600335923 /* DZDynamicDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -805,6 +840,8 @@
 		825075741DDA979C006C81F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				82C9BDB21DF125070006F788 /* DZDynamicDetailCommentCellFrame.h */,
+				82C9BDB31DF125070006F788 /* DZDynamicDetailCommentCellFrame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -812,6 +849,8 @@
 		825075751DDA979C006C81F4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				82C9BDAF1DF110F20006F788 /* DZDynamicDetailRequest.h */,
+				82C9BDB01DF110F20006F788 /* DZDynamicDetailRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -819,6 +858,8 @@
 		825075761DDA979C006C81F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82C9BDB51DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.h */,
+				82C9BDB61DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -861,6 +902,8 @@
 			children = (
 				82807ECE1DED119300F03FBE /* DZHomeListRequest.h */,
 				82807ECF1DED119300F03FBE /* DZHomeListRequest.m */,
+				82EB3AF91DEFD4D400335923 /* DZHomeDynamicRequest.h */,
+				82EB3AFA1DEFD4D400335923 /* DZHomeDynamicRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1034,6 +1077,8 @@
 				82807F591DED5BA300F03FBE /* DZUtils.m */,
 				82690BC61DEED17E0094D598 /* DZDownLoadImageManger.h */,
 				82690BC71DEED17E0094D598 /* DZDownLoadImageManger.m */,
+				82EB3AF61DEFCCD000335923 /* DZAnimationManager.h */,
+				82EB3AF71DEFCCD000335923 /* DZAnimationManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1041,6 +1086,7 @@
 		825075A31DDAB6BF006C81F4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				82EB3AF21DEFC38800335923 /* FXBlurView */,
 				82690BB11DEECF220094D598 /* MJPhotoBrowser */,
 			);
 			path = Vendor;
@@ -1070,6 +1116,12 @@
 				8251D5B51DEC2EBF00127018 /* DZCustomLoadingAnimationView.m */,
 				82690BAE1DEEAC560094D598 /* DZCustomGifImageView.h */,
 				82690BAF1DEEAC560094D598 /* DZCustomGifImageView.m */,
+				82EB3AE61DEFB3B300335923 /* NHCustomActionSheet.h */,
+				82EB3AE71DEFB3B300335923 /* NHCustomActionSheet.m */,
+				82EB3AE91DEFB3F600335923 /* NHDownloadImageManager.h */,
+				82EB3AEA1DEFB3F600335923 /* NHDownloadImageManager.m */,
+				82EB3AEF1DEFBC2300335923 /* DZCustomAleartView.h */,
+				82EB3AF01DEFBC2300335923 /* DZCustomAleartView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1093,6 +1145,8 @@
 				825075AD1DDABAE4006C81F4 /* UIView+Layer.m */,
 				828C5DE11DDBF12300081C9A /* UIView+Frame.h */,
 				828C5DE21DDBF12300081C9A /* UIView+Frame.m */,
+				82EB3AEC1DEFB56600335923 /* MBProgressHUD+NHAddition.h */,
+				82EB3AED1DEFB56600335923 /* MBProgressHUD+NHAddition.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1238,6 +1292,15 @@
 			name = UIViewController;
 			path = IntentionDz/Other/Category/UIViewController;
 			sourceTree = SOURCE_ROOT;
+		};
+		82EB3AF21DEFC38800335923 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				82EB3AF31DEFC38800335923 /* FXBlurView.h */,
+				82EB3AF41DEFC38800335923 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
 		};
 		D40E6A74A0AE3D2AA828D0C1 /* Pods */ = {
 			isa = PBXGroup;
@@ -1431,9 +1494,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				82690BC81DEED17E0094D598 /* DZDownLoadImageManger.m in Sources */,
+				82EB3AFE1DEFF6C600335923 /* DZDynamicDetailViewController.m in Sources */,
 				82690BAD1DEEA8D60094D598 /* DZHomeTableVideoCoverImageView.m in Sources */,
 				82807F631DED663600F03FBE /* DZHomeTopTipView.m in Sources */,
 				82807F571DED58AB00F03FBE /* UIView+Tap.m in Sources */,
+				82EB3AEB1DEFB3F600335923 /* NHDownloadImageManager.m in Sources */,
 				828C5DE61DDBF50E00081C9A /* DZHomeHeaderOptionView.m in Sources */,
 				82D62F481DDD9602004BC4FE /* DZCustomSlideViewController.m in Sources */,
 				8251D5AA1DEBFEFA00127018 /* DZCustomWebViewController.m in Sources */,
@@ -1445,10 +1510,13 @@
 				826A035D1DDC53FC0075D8AF /* NSArray+Addition.m in Sources */,
 				82807F5D1DED605600F03FBE /* DZHomeServiceDataModel.m in Sources */,
 				82690BC31DEECF220094D598 /* MJPhotoProgressView.m in Sources */,
+				82EB3AFB1DEFD4D400335923 /* DZHomeDynamicRequest.m in Sources */,
 				828C5DE91DDC0B6400081C9A /* NHHomeHeaderOptionViewItemView.m in Sources */,
+				82EB3AE81DEFB3B300335923 /* NHCustomActionSheet.m in Sources */,
 				826A035F1DDC53FC0075D8AF /* NSDictionary+Addition.m in Sources */,
 				8251D5B31DEC18F600127018 /* DZBaseTabelView.m in Sources */,
 				82807ED61DED161700F03FBE /* UIViewController+Loading.m in Sources */,
+				82EB3AF51DEFC38800335923 /* FXBlurView.m in Sources */,
 				82807F5A1DED5BA300F03FBE /* DZUtils.m in Sources */,
 				826A035E1DDC53FC0075D8AF /* NSDate+Addition.m in Sources */,
 				8214028B1DD9481600BEE691 /* ViewController.m in Sources */,
@@ -1458,6 +1526,7 @@
 				8250758F1DDAA646006C81F4 /* DZBaseNavigationViewController.m in Sources */,
 				82690BAA1DEEA26D0094D598 /* UIImageView+LBBlurredImage.m in Sources */,
 				820BB6E11DDED1DE00AF6A18 /* DZHomeBaseViewController.m in Sources */,
+				82C9BDB41DF125070006F788 /* DZDynamicDetailCommentCellFrame.m in Sources */,
 				826A03711DDC572E0075D8AF /* DZServiceListRequest.m in Sources */,
 				826A03671DDC53FC0075D8AF /* NSString+Addition.m in Sources */,
 				82D62F451DDD83EA004BC4FE /* DZBaseViewController.m in Sources */,
@@ -1468,11 +1537,13 @@
 				828C5DEC1DDC35B200081C9A /* DZBaseRequest.m in Sources */,
 				8250758A1DDA9C03006C81F4 /* DZMainTabbarViewController.m in Sources */,
 				825075921DDAA926006C81F4 /* DZHomeViewController.m in Sources */,
+				82C9BDB71DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m in Sources */,
 				8251D5B61DEC2EBF00127018 /* DZCustomLoadingAnimationView.m in Sources */,
 				826A037A1DDC5A830075D8AF /* NHServiceListModel.m in Sources */,
 				826A036E1DDC54850075D8AF /* DZCommonConstant.m in Sources */,
 				821402881DD9481600BEE691 /* AppDelegate.m in Sources */,
 				82690BC11DEECF220094D598 /* MJPhotoBrowser.m in Sources */,
+				82EB3AEE1DEFB56600335923 /* MBProgressHUD+NHAddition.m in Sources */,
 				828C5DEF1DDC3CB500081C9A /* DZRquestManager.m in Sources */,
 				82690B9A1DEE86120094D598 /* DZBaseImageView.m in Sources */,
 				825075981DDAA96C006C81F4 /* DZCheckViewController.m in Sources */,
@@ -1485,10 +1556,12 @@
 				82690BA71DEEA26D0094D598 /* UIImage+Cut.m in Sources */,
 				82C2F84A1DDD40E900CDD92C /* DZFileCacheManager.m in Sources */,
 				184305A71DEDA3C500B99863 /* NHBaseTableHeaderFooterView.m in Sources */,
+				82EB3AF81DEFCCD000335923 /* DZAnimationManager.m in Sources */,
 				82690BBF1DEECF220094D598 /* MJPhoto.m in Sources */,
 				82807ED01DED119300F03FBE /* DZHomeListRequest.m in Sources */,
 				825075AE1DDABAE4006C81F4 /* UIView+Layer.m in Sources */,
 				8251D5AD1DEC037500127018 /* DZBaseTableViewController.m in Sources */,
+				82C9BDB11DF110F20006F788 /* DZDynamicDetailRequest.m in Sources */,
 				826A035C1DDC53FC0075D8AF /* NSNotificationCenter+Addition.m in Sources */,
 				8250759D1DDAAA07006C81F4 /* DZMessageViewController.m in Sources */,
 				82690BC51DEECF220094D598 /* MJPhotoView.m in Sources */,
@@ -1498,6 +1571,7 @@
 				826A03611DDC53FC0075D8AF /* NSObject+AddProperty.m in Sources */,
 				82690BA81DEEA26D0094D598 /* UIImage+ImageEffects.m in Sources */,
 				826A03601DDC53FC0075D8AF /* NSFileManager+Paths.m in Sources */,
+				82EB3AF11DEFBC2300335923 /* DZCustomAleartView.m in Sources */,
 				82807F601DED62F200F03FBE /* DZUserInfoModel.m in Sources */,
 				826A036B1DDC53FC0075D8AF /* NSString+URL.m in Sources */,
 				82690BC21DEECF220094D598 /* MJPhotoLoadingView.m in Sources */,

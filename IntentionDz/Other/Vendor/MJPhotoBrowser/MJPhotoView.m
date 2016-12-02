@@ -10,13 +10,13 @@
 #import "MJPhotoLoadingView.h"
 #import "UIImageView+WebCache.h"
 #import <QuartzCore/QuartzCore.h>
-#import "NHBaseImageView.h"
+#import "DZBaseImageView.h"
 #import "NHCustomActionSheet.h"
 
 @interface MJPhotoView ()
 {
     BOOL _doubleTap;
-    NHBaseImageView *_imageView;
+    DZBaseImageView *_imageView;
     MJPhotoLoadingView *_photoLoadingView;
 }
 @end
@@ -28,7 +28,7 @@
     if ((self = [super initWithFrame:frame])) {
         self.clipsToBounds = YES;
         // 图片
-        _imageView = [[NHBaseImageView alloc] init];
+        _imageView = [[DZBaseImageView alloc] init];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:_imageView];
         

@@ -16,6 +16,9 @@
 #import "DZHomeTableViewCell.h"
 #import "MJPhoto.h"
 #import "MJPhotoBrowser.h"
+#import "DZCustomAleartView.h"
+#import "DZHomeDynamicRequest.h"
+#import "DZDynamicDetailViewController.h"
 #define kTipTopViewH 30
 @interface DZHomeBaseViewController ()<DZHomeTableViewCellDelegate>
 @property(nonatomic,copy)NSString *url;
@@ -165,16 +168,87 @@
     MJPhotoBrowser *photoBrower=[[MJPhotoBrowser alloc]init];
     NSMutableArray *phoneArray=[NSMutableArray new];
     for (NSURL *imageUrl in urls) {
-        MJPhoto *phone=({
-            MJPhoto *phone=[[MJPhoto alloc]init];
-            phone.url=imageUrl;
-            phone.srcImageView=imageView;
+        MJPhoto *photo=({
+            MJPhoto *photo=[[MJPhoto alloc]init];
+            photo.url=imageUrl;
+            photo.srcImageView=imageView;
+            photo;
         });
-        [phoneArray addObject:phone];
+        [phoneArray addObject:photo];
     }
     photoBrower.photos=phoneArray;
     photoBrower.currentPhotoIndex=currentIndex;
     [photoBrower show];
+}
+
+-(void)homeTableViewCellDidClickClose:(DZHomeTableViewCell *)cell{
+    DZCustomAleartView *alert=[[DZCustomAleartView alloc]initWithTitle:@"确认删除后，内涵段子将减少给您推荐类似的内容，您确认要删除吗？" cancle:@"取消" sure:@"确认删除"];
+    [alert showInview:self.view.window];
+    WeakSelf(weakSelf);
+    NSIndexPath *indexPath=[self.tableView indexPathForCell:cell];
+    [alert setUpSureBlock:^BOOL{
+        [weakSelf deleteDynamicAtIndexPath:indexPath];
+        return YES;
+    }];
+    
+}
+- (void)deleteDynamicAtIndexPath:(NSIndexPath *)indexPath {
+    [self.dataArray removeObjectAtIndex:indexPath.row];
+    [self.cellFrameArray removeObjectAtIndex:indexPath.row];
+    [self.tableView nh_deleteSingleRowAtIndexPath:indexPath];
+}
+-(void)homeTableViewCell:(DZHomeTableViewCell *)cell didClickItemWithType:(DZHomeTableViewCellItemType)item{
+    NSIndexPath *indexPath=[self.tableView indexPathForCell:cell];
+    DZHomeTableViewCellFrame *cellFrame=self.cellFrameArray[indexPath.row];
+    WeakSelf(weakSelf);
+    switch (item) {
+        case DZHomeTableViewCellItemTypeLike: {
+            [self requestActionWithActionname:@"digg" indexPath:indexPath];
+        } break;
+            
+        case DZHomeTableViewCellItemTypeDontLike: {
+            [self requestActionWithActionname:@"bury" indexPath:indexPath];
+        } break;
+            
+        case DZHomeTableViewCellItemTypeComment: {
+            
+            // 跳转
+            DZDynamicDetailViewController *controller = [[DZDynamicDetailViewController alloc] initWithCellFrame:cellFrame];
+            [self pushVc:controller];
+        } break;
+            
+        default:
+            break;
+    }
+}
+
+-(void)requestActionWithActionname:(NSString *)actionname indexPath:(NSIndexPath *)indexPath{
+    DZHomeTableViewCellFrame *cellFrame=self.cellFrameArray[indexPath.row];
+    DZHomeDynamicRequest *request = [DZHomeDynamicRequest dz_request];
+    request.group_id = cellFrame.model.group.ID;
+    request.dz_url = kNHHomeDynamicLikeAPI;
+    request.action = actionname;
+    [request dz_sendRequestWithCompletion:^(id reponse, BOOL success, NSString *message) {
+        if (success) {
+            DZHomeTableViewCell *cell=[self.tableView cellForRowAtIndexPath:indexPath];
+            if ([actionname isEqualToString:@"digg"]) {
+                if (cellFrame.model.group.user_digg) return ;
+                cellFrame.model.group.user_digg = 1;
+                cellFrame.model.group.digg_count += 1;
+                [cell didDing];
+            }else if ([actionname isEqualToString:@"bury"]) {
+                if (cellFrame.model.group.user_bury) return ;
+                cellFrame.model.group.user_bury = 1;
+                cellFrame.model.group.bury_count += 1;
+                [cell didBury];
+            } else if ([actionname isEqualToString:@"repin"]) { // 收藏
+                cellFrame.model.group.user_repin = 1;
+            } else if ([actionname isEqualToString:@"unrepin"]) { // 取消收藏
+                cellFrame.model.group.user_repin = 0;
+            }
+
+        }
+    }];
 }
 
 /*

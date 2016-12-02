@@ -19,6 +19,7 @@
 #define kWhiteColor [UIColor whiteColor]
 #define kBlackColor [UIColor blackColor]
 #define kOrangeColor [UIColor orangeColor]
+#define kLightGrayColor [UIColor lightGrayColor]
 #define kRedColor [UIColor redColor]
 #define tabbarBottonColor [UIColor colorWithRed:0.97f green:0.97f blue:0.97f alpha:1.00f]
 #define tabbarBottonNormalTextColor [UIColor colorWithRed:0.62f green:0.62f blue:0.62f alpha:1]
@@ -47,5 +48,6 @@
 #define kTabBarHeight 49
 
 #define kIntegerToStr(i) [NSString stringWithFormat: @"%ld", i]
-
+#define kValidStr(str) [DZUtils validString:str]
+#define kEmptyStr @""
 #endif /* DZDefaultHeader_h */

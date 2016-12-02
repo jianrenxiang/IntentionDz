@@ -11,4 +11,5 @@
 @interface DZBaseViewController : UIViewController
 /** 加载中*/
 - (void)showLoadingAnimation;
+- (void)pushVc:(UIViewController *)vc ;
 @end

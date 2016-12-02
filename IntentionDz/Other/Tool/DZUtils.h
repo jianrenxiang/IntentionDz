@@ -30,4 +30,8 @@
                            highlightedColor:(UIColor *)highlightedcolor
                                   textColor:(UIColor *)textColor
                                   lineSpace:(CGFloat)lineSpace;
+
++ (NSString *)validString:(NSString *)string;
+
++ (UIImage *)imageWithColor:(UIColor *)color;
 @end
