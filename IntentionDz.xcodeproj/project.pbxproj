@@ -19,6 +19,11 @@
 		821402931DD9481600BEE691 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 821402911DD9481600BEE691 /* LaunchScreen.storyboard */; };
 		8214029E1DD9481600BEE691 /* IntentionDzTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8214029D1DD9481600BEE691 /* IntentionDzTests.m */; };
 		821402A91DD9481600BEE691 /* IntentionDzUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 821402A81DD9481600BEE691 /* IntentionDzUITests.m */; };
+		821573A31DF660810037EE0B /* NHHomeNeiHanShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 821573A21DF660810037EE0B /* NHHomeNeiHanShareView.m */; };
+		821573A61DF660E30037EE0B /* NHNeiHanShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 821573A51DF660E30037EE0B /* NHNeiHanShareManager.m */; };
+		821573AC1DF6615B0037EE0B /* UIBarButtonItem+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 821573A91DF6615B0037EE0B /* UIBarButtonItem+Addition.m */; };
+		821573AD1DF6615B0037EE0B /* UIButton+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 821573AB1DF6615B0037EE0B /* UIButton+Addition.m */; };
+		821573B31DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 821573B21DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.m */; };
 		8250758A1DDA9C03006C81F4 /* DZMainTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825075891DDA9C03006C81F4 /* DZMainTabbarViewController.m */; };
 		8250758F1DDAA646006C81F4 /* DZBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8250758E1DDAA646006C81F4 /* DZBaseNavigationViewController.m */; };
 		825075921DDAA926006C81F4 /* DZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 825075911DDAA926006C81F4 /* DZHomeViewController.m */; };
@@ -81,6 +86,17 @@
 		828C5DE91DDC0B6400081C9A /* NHHomeHeaderOptionViewItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C5DE81DDC0B6400081C9A /* NHHomeHeaderOptionViewItemView.m */; };
 		828C5DEC1DDC35B200081C9A /* DZBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C5DEB1DDC35B200081C9A /* DZBaseRequest.m */; };
 		828C5DEF1DDC3CB500081C9A /* DZRquestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 828C5DEE1DDC3CB500081C9A /* DZRquestManager.m */; };
+		829B3D071DF7E38300852086 /* DZHomeAttentionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D061DF7E38300852086 /* DZHomeAttentionViewController.m */; };
+		829B3D0A1DF7E4D100852086 /* DZHomeAttentionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D091DF7E4D100852086 /* DZHomeAttentionRequest.m */; };
+		829B3D0D1DF7E50D00852086 /* DZHomeAttentionListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D0C1DF7E50D00852086 /* DZHomeAttentionListRequest.m */; };
+		829B3D101DF7E72600852086 /* DZHomeRecommendAttentionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D0F1DF7E72600852086 /* DZHomeRecommendAttentionViewCell.m */; };
+		829B3D131DF7E76E00852086 /* DZHomeAttentionEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D121DF7E76E00852086 /* DZHomeAttentionEmptyView.m */; };
+		829B3D161DF7E8F500852086 /* DZCustomCommonEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D151DF7E8F500852086 /* DZCustomCommonEmptyView.m */; };
+		829B3D191DF7F19A00852086 /* DZHomeAttentionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D181DF7F19A00852086 /* DZHomeAttentionListViewController.m */; };
+		829B3D1C1DF8001000852086 /* DZHomeUserIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D1B1DF8001000852086 /* DZHomeUserIconView.m */; };
+		829B3D1F1DF8041700852086 /* DZUserInfoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 829B3D1E1DF8041700852086 /* DZUserInfoManager.m */; };
+		82A262111DF545E5001EB62F /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 82A2620E1DF545E5001EB62F /* WMPlayer.bundle */; };
+		82A262121DF545E5001EB62F /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A262101DF545E5001EB62F /* WMPlayer.m */; };
 		82C2F8471DDD3DC800CDD92C /* NHBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C2F8461DDD3DC800CDD92C /* NHBaseModel.m */; };
 		82C2F84A1DDD40E900CDD92C /* DZFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C2F8491DDD40E900CDD92C /* DZFileCacheManager.m */; };
 		82C9BDB11DF110F20006F788 /* DZDynamicDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C9BDB01DF110F20006F788 /* DZDynamicDetailRequest.m */; };
@@ -140,6 +156,16 @@
 		821402A41DD9481600BEE691 /* IntentionDzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntentionDzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		821402A81DD9481600BEE691 /* IntentionDzUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntentionDzUITests.m; sourceTree = "<group>"; };
 		821402AA1DD9481600BEE691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		821573A11DF660810037EE0B /* NHHomeNeiHanShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHHomeNeiHanShareView.h; sourceTree = "<group>"; };
+		821573A21DF660810037EE0B /* NHHomeNeiHanShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHHomeNeiHanShareView.m; sourceTree = "<group>"; };
+		821573A41DF660E30037EE0B /* NHNeiHanShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHNeiHanShareManager.h; sourceTree = "<group>"; };
+		821573A51DF660E30037EE0B /* NHNeiHanShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHNeiHanShareManager.m; sourceTree = "<group>"; };
+		821573A81DF6615B0037EE0B /* UIBarButtonItem+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Addition.h"; sourceTree = "<group>"; };
+		821573A91DF6615B0037EE0B /* UIBarButtonItem+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Addition.m"; sourceTree = "<group>"; };
+		821573AA1DF6615B0037EE0B /* UIButton+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Addition.h"; sourceTree = "<group>"; };
+		821573AB1DF6615B0037EE0B /* UIButton+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Addition.m"; sourceTree = "<group>"; };
+		821573B11DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeAttentionListSectionHeaderView.h; sourceTree = "<group>"; };
+		821573B21DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeAttentionListSectionHeaderView.m; sourceTree = "<group>"; };
 		825075881DDA9C03006C81F4 /* DZMainTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMainTabbarViewController.h; sourceTree = "<group>"; };
 		825075891DDA9C03006C81F4 /* DZMainTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMainTabbarViewController.m; sourceTree = "<group>"; };
 		8250758B1DDA9DCE006C81F4 /* IntentionDzPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntentionDzPrefixHeader.pch; sourceTree = "<group>"; };
@@ -265,6 +291,27 @@
 		828C5DEB1DDC35B200081C9A /* DZBaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZBaseRequest.m; sourceTree = "<group>"; };
 		828C5DED1DDC3CB500081C9A /* DZRquestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRquestManager.h; sourceTree = "<group>"; };
 		828C5DEE1DDC3CB500081C9A /* DZRquestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZRquestManager.m; sourceTree = "<group>"; };
+		829B3D051DF7E38300852086 /* DZHomeAttentionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeAttentionViewController.h; sourceTree = "<group>"; };
+		829B3D061DF7E38300852086 /* DZHomeAttentionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeAttentionViewController.m; sourceTree = "<group>"; };
+		829B3D081DF7E4D100852086 /* DZHomeAttentionRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeAttentionRequest.h; sourceTree = "<group>"; };
+		829B3D091DF7E4D100852086 /* DZHomeAttentionRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeAttentionRequest.m; sourceTree = "<group>"; };
+		829B3D0B1DF7E50D00852086 /* DZHomeAttentionListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeAttentionListRequest.h; sourceTree = "<group>"; };
+		829B3D0C1DF7E50D00852086 /* DZHomeAttentionListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeAttentionListRequest.m; sourceTree = "<group>"; };
+		829B3D0E1DF7E72600852086 /* DZHomeRecommendAttentionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeRecommendAttentionViewCell.h; sourceTree = "<group>"; };
+		829B3D0F1DF7E72600852086 /* DZHomeRecommendAttentionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeRecommendAttentionViewCell.m; sourceTree = "<group>"; };
+		829B3D111DF7E76E00852086 /* DZHomeAttentionEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeAttentionEmptyView.h; sourceTree = "<group>"; };
+		829B3D121DF7E76E00852086 /* DZHomeAttentionEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeAttentionEmptyView.m; sourceTree = "<group>"; };
+		829B3D141DF7E8F500852086 /* DZCustomCommonEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCustomCommonEmptyView.h; sourceTree = "<group>"; };
+		829B3D151DF7E8F500852086 /* DZCustomCommonEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCustomCommonEmptyView.m; sourceTree = "<group>"; };
+		829B3D171DF7F19A00852086 /* DZHomeAttentionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeAttentionListViewController.h; sourceTree = "<group>"; };
+		829B3D181DF7F19A00852086 /* DZHomeAttentionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeAttentionListViewController.m; sourceTree = "<group>"; };
+		829B3D1A1DF8001000852086 /* DZHomeUserIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeUserIconView.h; sourceTree = "<group>"; };
+		829B3D1B1DF8001000852086 /* DZHomeUserIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeUserIconView.m; sourceTree = "<group>"; };
+		829B3D1D1DF8041700852086 /* DZUserInfoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZUserInfoManager.h; sourceTree = "<group>"; };
+		829B3D1E1DF8041700852086 /* DZUserInfoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZUserInfoManager.m; sourceTree = "<group>"; };
+		82A2620E1DF545E5001EB62F /* WMPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMPlayer.bundle; sourceTree = "<group>"; };
+		82A2620F1DF545E5001EB62F /* WMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMPlayer.h; sourceTree = "<group>"; };
+		82A262101DF545E5001EB62F /* WMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMPlayer.m; sourceTree = "<group>"; };
 		82C2F8451DDD3DC800CDD92C /* NHBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHBaseModel.h; sourceTree = "<group>"; };
 		82C2F8461DDD3DC800CDD92C /* NHBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseModel.m; sourceTree = "<group>"; };
 		82C2F8481DDD40E900CDD92C /* DZFileCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFileCacheManager.h; sourceTree = "<group>"; };
@@ -403,6 +450,17 @@
 				821402AA1DD9481600BEE691 /* Info.plist */,
 			);
 			path = IntentionDzUITests;
+			sourceTree = "<group>";
+		};
+		821573A71DF6615B0037EE0B /* UIBarButtoItem */ = {
+			isa = PBXGroup;
+			children = (
+				821573A81DF6615B0037EE0B /* UIBarButtonItem+Addition.h */,
+				821573A91DF6615B0037EE0B /* UIBarButtonItem+Addition.m */,
+				821573AA1DF6615B0037EE0B /* UIButton+Addition.h */,
+				821573AB1DF6615B0037EE0B /* UIButton+Addition.m */,
+			);
+			path = UIBarButtoItem;
 			sourceTree = "<group>";
 		};
 		825075411DDA979C006C81F4 /* Application */ = {
@@ -792,6 +850,10 @@
 		8250756E1DDA979C006C81F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				829B3D051DF7E38300852086 /* DZHomeAttentionViewController.h */,
+				829B3D061DF7E38300852086 /* DZHomeAttentionViewController.m */,
+				829B3D171DF7F19A00852086 /* DZHomeAttentionListViewController.h */,
+				829B3D181DF7F19A00852086 /* DZHomeAttentionListViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -806,6 +868,10 @@
 		825075701DDA979C006C81F4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				829B3D081DF7E4D100852086 /* DZHomeAttentionRequest.h */,
+				829B3D091DF7E4D100852086 /* DZHomeAttentionRequest.m */,
+				829B3D0B1DF7E50D00852086 /* DZHomeAttentionListRequest.h */,
+				829B3D0C1DF7E50D00852086 /* DZHomeAttentionListRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -813,6 +879,12 @@
 		825075711DDA979C006C81F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				821573B11DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.h */,
+				821573B21DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.m */,
+				829B3D0E1DF7E72600852086 /* DZHomeRecommendAttentionViewCell.h */,
+				829B3D0F1DF7E72600852086 /* DZHomeRecommendAttentionViewCell.m */,
+				829B3D111DF7E76E00852086 /* DZHomeAttentionEmptyView.h */,
+				829B3D121DF7E76E00852086 /* DZHomeAttentionEmptyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -911,6 +983,8 @@
 		8250757B1DDA979C006C81F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				821573A11DF660810037EE0B /* NHHomeNeiHanShareView.h */,
+				821573A21DF660810037EE0B /* NHHomeNeiHanShareView.m */,
 				828C5DE41DDBF50E00081C9A /* DZHomeHeaderOptionView.h */,
 				828C5DE51DDBF50E00081C9A /* DZHomeHeaderOptionView.m */,
 				828C5DE71DDC0B6400081C9A /* NHHomeHeaderOptionViewItemView.h */,
@@ -921,6 +995,8 @@
 				184305A91DEDA5EA00B99863 /* DZHomeTableViewCell.m */,
 				82690BAB1DEEA8D60094D598 /* DZHomeTableVideoCoverImageView.h */,
 				82690BAC1DEEA8D60094D598 /* DZHomeTableVideoCoverImageView.m */,
+				829B3D1A1DF8001000852086 /* DZHomeUserIconView.h */,
+				829B3D1B1DF8001000852086 /* DZHomeUserIconView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1065,6 +1141,8 @@
 		825075A21DDAB6BF006C81F4 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				821573A41DF660E30037EE0B /* NHNeiHanShareManager.h */,
+				821573A51DF660E30037EE0B /* NHNeiHanShareManager.m */,
 				826A03721DDC57F40075D8AF /* NHCommonAPIConstant.h */,
 				826A03731DDC57F40075D8AF /* NHCommonAPIConstant.m */,
 				828C5DED1DDC3CB500081C9A /* DZRquestManager.h */,
@@ -1079,6 +1157,8 @@
 				82690BC71DEED17E0094D598 /* DZDownLoadImageManger.m */,
 				82EB3AF61DEFCCD000335923 /* DZAnimationManager.h */,
 				82EB3AF71DEFCCD000335923 /* DZAnimationManager.m */,
+				829B3D1D1DF8041700852086 /* DZUserInfoManager.h */,
+				829B3D1E1DF8041700852086 /* DZUserInfoManager.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -1086,6 +1166,7 @@
 		825075A31DDAB6BF006C81F4 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				82A2620D1DF545E5001EB62F /* WMPlayer */,
 				82EB3AF21DEFC38800335923 /* FXBlurView */,
 				82690BB11DEECF220094D598 /* MJPhotoBrowser */,
 			);
@@ -1122,6 +1203,8 @@
 				82EB3AEA1DEFB3F600335923 /* NHDownloadImageManager.m */,
 				82EB3AEF1DEFBC2300335923 /* DZCustomAleartView.h */,
 				82EB3AF01DEFBC2300335923 /* DZCustomAleartView.m */,
+				829B3D141DF7E8F500852086 /* DZCustomCommonEmptyView.h */,
+				829B3D151DF7E8F500852086 /* DZCustomCommonEmptyView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1129,6 +1212,7 @@
 		825075A91DDABA1B006C81F4 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				821573A71DF6615B0037EE0B /* UIBarButtoItem */,
 				82690B9B1DEEA26D0094D598 /* UIImage */,
 				82807ED11DED15B100F03FBE /* UIViewController */,
 				825075AA1DDABA1B006C81F4 /* UIView */,
@@ -1293,6 +1377,16 @@
 			path = IntentionDz/Other/Category/UIViewController;
 			sourceTree = SOURCE_ROOT;
 		};
+		82A2620D1DF545E5001EB62F /* WMPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				82A2620E1DF545E5001EB62F /* WMPlayer.bundle */,
+				82A2620F1DF545E5001EB62F /* WMPlayer.h */,
+				82A262101DF545E5001EB62F /* WMPlayer.m */,
+			);
+			path = WMPlayer;
+			sourceTree = "<group>";
+		};
 		82EB3AF21DEFC38800335923 /* FXBlurView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1420,6 +1514,7 @@
 				821402931DD9481600BEE691 /* LaunchScreen.storyboard in Resources */,
 				821402901DD9481600BEE691 /* Assets.xcassets in Resources */,
 				82690BC01DEECF220094D598 /* MJPhotoBrowser.bundle in Resources */,
+				82A262111DF545E5001EB62F /* WMPlayer.bundle in Resources */,
 				8214028E1DD9481600BEE691 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1496,6 +1591,7 @@
 				82690BC81DEED17E0094D598 /* DZDownLoadImageManger.m in Sources */,
 				82EB3AFE1DEFF6C600335923 /* DZDynamicDetailViewController.m in Sources */,
 				82690BAD1DEEA8D60094D598 /* DZHomeTableVideoCoverImageView.m in Sources */,
+				821573A61DF660E30037EE0B /* NHNeiHanShareManager.m in Sources */,
 				82807F631DED663600F03FBE /* DZHomeTopTipView.m in Sources */,
 				82807F571DED58AB00F03FBE /* UIView+Tap.m in Sources */,
 				82EB3AEB1DEFB3F600335923 /* NHDownloadImageManager.m in Sources */,
@@ -1507,6 +1603,7 @@
 				826A03681DDC53FC0075D8AF /* NSString+Encrypt.m in Sources */,
 				82807F661DED75F400F03FBE /* DZHomeTableViewCellFrame.m in Sources */,
 				826A03641DDC53FC0075D8AF /* NSObject+GCD.m in Sources */,
+				829B3D191DF7F19A00852086 /* DZHomeAttentionListViewController.m in Sources */,
 				826A035D1DDC53FC0075D8AF /* NSArray+Addition.m in Sources */,
 				82807F5D1DED605600F03FBE /* DZHomeServiceDataModel.m in Sources */,
 				82690BC31DEECF220094D598 /* MJPhotoProgressView.m in Sources */,
@@ -1516,8 +1613,10 @@
 				826A035F1DDC53FC0075D8AF /* NSDictionary+Addition.m in Sources */,
 				8251D5B31DEC18F600127018 /* DZBaseTabelView.m in Sources */,
 				82807ED61DED161700F03FBE /* UIViewController+Loading.m in Sources */,
+				821573AC1DF6615B0037EE0B /* UIBarButtonItem+Addition.m in Sources */,
 				82EB3AF51DEFC38800335923 /* FXBlurView.m in Sources */,
 				82807F5A1DED5BA300F03FBE /* DZUtils.m in Sources */,
+				821573B31DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.m in Sources */,
 				826A035E1DDC53FC0075D8AF /* NSDate+Addition.m in Sources */,
 				8214028B1DD9481600BEE691 /* ViewController.m in Sources */,
 				82690BA61DEEA26D0094D598 /* UIImage+Addition.m in Sources */,
@@ -1531,10 +1630,14 @@
 				826A03671DDC53FC0075D8AF /* NSString+Addition.m in Sources */,
 				82D62F451DDD83EA004BC4FE /* DZBaseViewController.m in Sources */,
 				184305AA1DEDA5EA00B99863 /* DZHomeTableViewCell.m in Sources */,
+				829B3D0A1DF7E4D100852086 /* DZHomeAttentionRequest.m in Sources */,
+				829B3D161DF7E8F500852086 /* DZCustomCommonEmptyView.m in Sources */,
 				82690BB01DEEAC560094D598 /* DZCustomGifImageView.m in Sources */,
 				82C2F8471DDD3DC800CDD92C /* NHBaseModel.m in Sources */,
 				826A03631DDC53FC0075D8AF /* NSObject+AutoCoding.m in Sources */,
+				829B3D0D1DF7E50D00852086 /* DZHomeAttentionListRequest.m in Sources */,
 				828C5DEC1DDC35B200081C9A /* DZBaseRequest.m in Sources */,
+				821573A31DF660810037EE0B /* NHHomeNeiHanShareView.m in Sources */,
 				8250758A1DDA9C03006C81F4 /* DZMainTabbarViewController.m in Sources */,
 				825075921DDAA926006C81F4 /* DZHomeViewController.m in Sources */,
 				82C9BDB71DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m in Sources */,
@@ -1542,10 +1645,12 @@
 				826A037A1DDC5A830075D8AF /* NHServiceListModel.m in Sources */,
 				826A036E1DDC54850075D8AF /* DZCommonConstant.m in Sources */,
 				821402881DD9481600BEE691 /* AppDelegate.m in Sources */,
+				829B3D1C1DF8001000852086 /* DZHomeUserIconView.m in Sources */,
 				82690BC11DEECF220094D598 /* MJPhotoBrowser.m in Sources */,
 				82EB3AEE1DEFB56600335923 /* MBProgressHUD+NHAddition.m in Sources */,
 				828C5DEF1DDC3CB500081C9A /* DZRquestManager.m in Sources */,
 				82690B9A1DEE86120094D598 /* DZBaseImageView.m in Sources */,
+				821573AD1DF6615B0037EE0B /* UIButton+Addition.m in Sources */,
 				825075981DDAA96C006C81F4 /* DZCheckViewController.m in Sources */,
 				826A03651DDC53FC0075D8AF /* NSObject+Runtime.m in Sources */,
 				821402851DD9481600BEE691 /* main.m in Sources */,
@@ -1556,18 +1661,21 @@
 				82690BA71DEEA26D0094D598 /* UIImage+Cut.m in Sources */,
 				82C2F84A1DDD40E900CDD92C /* DZFileCacheManager.m in Sources */,
 				184305A71DEDA3C500B99863 /* NHBaseTableHeaderFooterView.m in Sources */,
+				82A262121DF545E5001EB62F /* WMPlayer.m in Sources */,
 				82EB3AF81DEFCCD000335923 /* DZAnimationManager.m in Sources */,
 				82690BBF1DEECF220094D598 /* MJPhoto.m in Sources */,
 				82807ED01DED119300F03FBE /* DZHomeListRequest.m in Sources */,
 				825075AE1DDABAE4006C81F4 /* UIView+Layer.m in Sources */,
 				8251D5AD1DEC037500127018 /* DZBaseTableViewController.m in Sources */,
 				82C9BDB11DF110F20006F788 /* DZDynamicDetailRequest.m in Sources */,
+				829B3D131DF7E76E00852086 /* DZHomeAttentionEmptyView.m in Sources */,
 				826A035C1DDC53FC0075D8AF /* NSNotificationCenter+Addition.m in Sources */,
 				8250759D1DDAAA07006C81F4 /* DZMessageViewController.m in Sources */,
 				82690BC51DEECF220094D598 /* MJPhotoView.m in Sources */,
 				826A03691DDC53FC0075D8AF /* NSString+Extension.m in Sources */,
 				825075951DDAA955006C81F4 /* DZDiscoverViewController.m in Sources */,
 				826A03661DDC53FC0075D8AF /* NSAttributedString+Size.m in Sources */,
+				829B3D1F1DF8041700852086 /* DZUserInfoManager.m in Sources */,
 				826A03611DDC53FC0075D8AF /* NSObject+AddProperty.m in Sources */,
 				82690BA81DEEA26D0094D598 /* UIImage+ImageEffects.m in Sources */,
 				826A03601DDC53FC0075D8AF /* NSFileManager+Paths.m in Sources */,
@@ -1575,6 +1683,8 @@
 				82807F601DED62F200F03FBE /* DZUserInfoModel.m in Sources */,
 				826A036B1DDC53FC0075D8AF /* NSString+URL.m in Sources */,
 				82690BC21DEECF220094D598 /* MJPhotoLoadingView.m in Sources */,
+				829B3D071DF7E38300852086 /* DZHomeAttentionViewController.m in Sources */,
+				829B3D101DF7E72600852086 /* DZHomeRecommendAttentionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

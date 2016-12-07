@@ -9,6 +9,15 @@
 #import "DZUtils.h"
 #import "MJRefresh.h"
 @implementation DZUtils
+// 时间戳转时间
++ (NSString *)datestrFromDate:(NSDate *)date
+               withDateFormat:(NSString *)format {
+    
+    NSDateFormatter* dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:format];
+    return [dateFormat stringFromDate:date];
+}
+
 /** 开始下拉刷新 */
 + (void)beginPullRefreshForScrollView:(UIScrollView *)scrollView;{
     [scrollView.mj_header beginRefreshing];

@@ -13,8 +13,11 @@
 #import "DZCustomSlideViewController.h"
 #import "DZHomeBaseViewController.h"
 #import "DZCustomWebViewController.h"
+#import "DZHomeAttentionViewController.h"
+#import "DZHomeUserIconView.h"
 @interface DZHomeViewController ()<DZCustomSlideControllerDataSoure,DZCustomSlideControllerDelegate>
 @property(nonatomic,weak)DZHomeHeaderOptionView *optionalView;
+@property (nonatomic, weak) DZHomeAttentionViewController *attentionController;
 @property(nonatomic,weak)DZCustomSlideViewController *slideViewController;
 @property(nonatomic,strong)NSMutableArray *controllers;
 @property(nonatomic,strong)NSMutableArray *titles;
@@ -32,6 +35,18 @@
         optional.backgroundColor=kWhiteColor;
     }
     return _optionalView;
+}
+
+-(DZHomeAttentionViewController*)attentionController{
+    if (!_attentionController) {
+        DZHomeAttentionViewController *attention=[[DZHomeAttentionViewController alloc]init];
+        [attention willMoveToParentViewController:self];
+        [self addChildViewController:attention];
+        [self.view addSubview:attention.view];
+        attention.view.frame=CGRectMake(0, 0, kScreenWidth, kScreenHeight-kNavigationBarHeight-kTabBarHeight);
+        _attentionController=attention;
+    }
+    return _attentionController;
 }
 
 -(NSMutableArray*)controllers{
@@ -117,7 +132,7 @@
         NSString *url=self.urls[i];
         NSString *title=self.titles[i];
         if ([title isEqual:@"游戏"]) {
-            DZCustomWebViewController  *webController=[[DZCustomWebViewController alloc]init];
+            DZCustomWebViewController  *webController=[[DZCustomWebViewController alloc]initWithUrl:url];
             [self.controllers addObject:webController];
         }else if ([title isEqualToString:@"精华"]){
             DZCustomWebViewController *webView=[[DZCustomWebViewController alloc]init];
@@ -134,6 +149,7 @@
     self.optionalView.titles=self.titles.copy;
     self.optionalView.homeHeaderOpetionalViewItemClickHandle=^(DZHomeHeaderOptionView *optionView,NSString *title,NSInteger currentIndex){
         weakSelf.slideViewController.selectIndex=currentIndex;
+       
     };
     [self.slideViewController reloadDate];
 }
@@ -147,12 +163,31 @@
     [segment clickDefault];
     segment.DZCustomSegmentViewBtnClickHandle=^(DZCustomSementView *semg,NSString *title,NSInteger currentIndex){
         BOOL isFeatured=(currentIndex==0);
-        
-        
+        weakSelf.optionalView.hidden=weakSelf.slideViewController.view.hidden=!isFeatured;
+        weakSelf.attentionController.view.hidden=isFeatured;
     };
-    
+    // 头像
+    DZHomeUserIconView *iconView = [DZHomeUserIconView iconView];
+    iconView.frame = CGRectMake(-10, 0, 35, 35);
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:iconView];
+    iconView.homeUserIconViewDidClickHandle = ^(DZHomeUserIconView *iconView) {
+        [weakSelf leftItemClick];
+    };
+//    if (![NHUserInfoManager sharedManager].isLogin) {
+//        iconView.image = [UIImage imageNamed:@"defaulthead"];
+//    } else {
+//        iconView.iconUrl = [NHUserInfoManager sharedManager].currentUserInfo.avatar_url;
+//    }
+    // 发布
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"submission"] style:UIBarButtonItemStylePlain target:self action:@selector(rightItemClick)];
     
 }
+
+// 个人中心
+- (void)leftItemClick {
+    
+}
+
 #pragma mark--
 -(NSInteger)numberofChildViewControllerInSlideViewController:(DZCustomSlideViewController *)slideViewController{
     return self.titles.count;

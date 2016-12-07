@@ -61,6 +61,12 @@
 
 #pragma mark--懒加载
 
+- (void)setCellFrame:(DZHomeTableViewCellFrame *)cellFrame isDetail:(BOOL)isDetail {
+    _isDetail = isDetail;
+    self.cellFrame = cellFrame;
+}
+
+
 -(DZBaseImageView*)iconImg{
     if (!_iconImg) {
         DZBaseImageView *img=[[DZBaseImageView alloc]init];
@@ -69,7 +75,9 @@
         img.backgroundColor=kSeperatorColor;
         WeakSelf(weakSelf);
         [img setTapActionWithBlock:^{
-            NSLog(@"点击了头像");
+            if ([weakSelf.delegate respondsToSelector:@selector(homeTableViewCell:gotoPersonalCenterWithUserInfo:)]) {
+                [weakSelf.delegate homeTableViewCell:weakSelf gotoPersonalCenterWithUserInfo:weakSelf.cellFrame.model.group.user];
+            }
         }];
     }
     return _iconImg;
@@ -179,7 +187,9 @@
     }
     return _version_Btn;
 }
-
+-(void)versionBtnClick:(UIButton*)btn{
+    NSLog(@"查看分类");
+}
 - (UIButton *)attBtn {
     if (!_attBtn) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -195,7 +205,22 @@
     }
     return _attBtn;
 }
-
+- (void)attBtnClick:(UIButton *)btn {
+    if ([self.delegate respondsToSelector:@selector(homeTableViewCellDidClickAttention:)]) {
+        [self.delegate homeTableViewCellDidClickAttention:self];
+    }
+    
+    // 模拟网络请求
+    if ([self.attBtn.currentTitle isEqualToString:@"关注"]) {
+        [self.attBtn setTitle:@"已关注" forState:UIControlStateNormal];
+        self.attBtn.layerBorderColor = kCommonGrayTextColor;
+        [self.attBtn setTitleColor:kCommonGrayTextColor forState:UIControlStateNormal];
+    } else {
+        [self.attBtn setTitle:@"关注" forState:UIControlStateNormal];
+        self.attBtn.layerBorderColor = kCommonHighLightRedColor;
+        [self.attBtn setTitleColor:kCommonHighLightRedColor forState:UIControlStateNormal];
+    }
+}
 - (UIButton *)shareBtn {
     if (!_shareBtn) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -360,9 +385,9 @@
         img.image = [UIImage imageNamed:@"dislike"];
         WeakSelf(weakSelf);
         [img setTapActionWithBlock:^{
-//            if ([weakSelf.delegate respondsToSelector:@selector(homeTableViewCellDidClickClose:)]) {
-//                [weakSelf.delegate homeTableViewCellDidClickClose:weakSelf];
-//            }
+            if ([weakSelf.delegate respondsToSelector:@selector(homeTableViewCellDidClickClose:)]) {
+                [weakSelf.delegate homeTableViewCellDidClickClose:weakSelf];
+            }
         }];
     }
     return _closeImg;
@@ -488,7 +513,21 @@
         default:
             break;
     }
+    // 如果是从详情页面进入，有关注按钮
+    if (self.isDetail) {
+        self.attBtn.hidden = NO;
+        self.attBtn.frame = cellFrame.attBtnF;
+    } else {
+        self.attBtn.hidden = YES;
+    }
     
+    if (self.isFromHomeController) {
+        self.closeImg.hidden = NO;
+        self.closeImg.frame = cellFrame.closeImgF;
+    } else {
+        self.closeImg.hidden = YES;
+    }
+
     // 评论
 //    if (cellFrame.model.comments.count) {
 //        for (int i = 0; i < cellFrame.commentFrameArray.count; i++) {
@@ -523,5 +562,12 @@
     self.bottomView.frame = cellFrame.bottomViewF;
 
 }
+// 点赞
+- (void)didDing {
+    [self.likeCountBtn setImage:[UIImage imageNamed:@"digupicon_textpage_press"] forState:UIControlStateNormal];
+    [self animationWithBtn:self.likeCountBtn];
+    [self.likeCountBtn setTitle:kIntegerToStr(self.likeCountBtn.currentTitle.integerValue + 1) forState:UIControlStateNormal];
+}
+
 
 @end

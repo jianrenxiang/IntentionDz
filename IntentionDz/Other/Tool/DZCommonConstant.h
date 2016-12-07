@@ -17,5 +17,4 @@ UIKIT_EXTERN NSString *const kDZUserCurrentLongitude;
 UIKIT_EXTERN NSString *const kDZDidLoginFlag;
 //当前网络请求成功
 UIKIT_EXTERN NSString *const kDZRequestSuccessNotification;
-
 @end

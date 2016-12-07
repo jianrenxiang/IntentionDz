@@ -7,20 +7,20 @@
 //
 
 #import "NSString+Addition.h"
-
+#import "DZUtils.h"
 @implementation NSString (Addition)
  
 
-//- (NSString *)convertTimesTampWithDateFormat:(NSString *)dateFormat {
-//    //    @"yyyy-MM-dd HH:mm"
-//    if (dateFormat.length == 0) {
-//        return @"";
-//    }
-//    NSTimeInterval timeInterval = [self doubleValue];
-//    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
-////    NSString *timeStr = [NHUtils datestrFromDate:date withDateFormat:dateFormat];
-////    return timeStr;
-//}
+- (NSString *)convertTimesTampWithDateFormat:(NSString *)dateFormat {
+    //    @"yyyy-MM-dd HH:mm"
+    if (dateFormat.length == 0) {
+        return @"";
+    }
+    NSTimeInterval timeInterval = [self doubleValue];
+    NSDate *date = [NSDate dateWithTimeIntervalSince1970:timeInterval];
+    NSString *timeStr = [DZUtils datestrFromDate:date withDateFormat:dateFormat];
+    return timeStr;
+}
 
 - (NSString *)contractionsImageViewUrl {
     CGFloat width = kScreenWidth - 2 * kLeftMargin;

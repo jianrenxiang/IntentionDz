@@ -12,4 +12,7 @@
 /** 加载中*/
 - (void)showLoadingAnimation;
 - (void)pushVc:(UIViewController *)vc ;
+- (void)presentVc:(UIViewController *)vc;
+- (void)presentVc:(UIViewController *)vc completion:(void (^)(void))completion;
+- (void)addChildVc:(UIViewController *)childVc;
 @end

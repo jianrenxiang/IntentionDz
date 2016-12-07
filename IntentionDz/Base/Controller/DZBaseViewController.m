@@ -35,12 +35,27 @@
     [NSNotificationCenter addObserver:self action:@selector(requestSuccessNotification) name:kDZRequestSuccessNotification];
     
 }
-
+- (void)presentVc:(UIViewController *)vc {
+    if ([vc isKindOfClass:[UIViewController class]] == NO) return ;
+    [self presentVc:vc completion:nil];
+}
+- (void)presentVc:(UIViewController *)vc completion:(void (^)(void))completion {
+    if ([vc isKindOfClass:[UIViewController class]] == NO) return ;
+    [self presentViewController:vc animated:YES completion:completion];
+}
 -(void)requestSuccessNotification{
     [self hideLoadingAnimation];
 }
 
-
+- (void)addChildVc:(UIViewController *)childVc {
+    if ([childVc isKindOfClass:[UIViewController class]] == NO) {
+        return ;
+    }
+    [childVc willMoveToParentViewController:self];
+    [self addChildViewController:childVc];
+    [self.view addSubview:childVc.view];
+    childVc.view.frame = self.view.bounds;
+}
 -(void)showLoadingAnimation{
     DZCustomLoadingAnimationView *loadAnimation=[[DZCustomLoadingAnimationView alloc]init];
     [loadAnimation showInView:self.view];

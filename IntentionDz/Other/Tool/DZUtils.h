@@ -34,4 +34,7 @@
 + (NSString *)validString:(NSString *)string;
 
 + (UIImage *)imageWithColor:(UIColor *)color;
+
++ (NSString *)datestrFromDate:(NSDate *)date
+               withDateFormat:(NSString *)format;
 @end

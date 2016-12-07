@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-@class NHHomeServiceDataElementComment;
+#import "DZHomeServiceDataModel.h"
+@class NHHomeServiceDataElement;
 @interface DZDynamicDetailCommentCellFrame : NSObject
 @property (nonatomic, strong) NHHomeServiceDataElementComment *commentModel;
 @property (nonatomic, assign)  CGRect iconImgF;

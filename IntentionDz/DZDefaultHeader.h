@@ -46,6 +46,7 @@
 #pragma mark --系统UI
 #define kTopBarHeight 64
 #define kTabBarHeight 49
+#define kNavigationBarHeight 44
 
 #define kIntegerToStr(i) [NSString stringWithFormat: @"%ld", i]
 #define kValidStr(str) [DZUtils validString:str]

@@ -9,5 +9,5 @@
 #import "DZBaseViewController.h"
 
 @interface DZCustomWebViewController : DZBaseViewController
-
+- (instancetype)initWithUrl:(NSString *)url;
 @end

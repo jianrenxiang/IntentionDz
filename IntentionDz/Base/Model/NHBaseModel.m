@@ -12,6 +12,13 @@
 
 @implementation NHBaseModel
 MJCodingImplementation
++ (NSDictionary *)replacedKeyFromPropertyName {
+    return @{
+             @"ID":@"id",
+             @"desc":@"description",
+             @"responseData" : @"data"
+             };
+}
 -(void)archvie;{
     [DZFileCacheManager saveObject:self byFileName:[self.class description]];
 }
@@ -34,7 +41,7 @@ MJCodingImplementation
     return [NSMutableArray new];
 }
 
-+(instancetype)modelWithDictionary:(NSDictionary*)dictionary;{
++(id)modelWithDictionary:(NSDictionary*)dictionary;{
     if ([dictionary isKindOfClass:[NSDictionary class]]) {
         return [self mj_objectWithKeyValues:dictionary];
     }
@@ -50,7 +57,7 @@ MJCodingImplementation
     }];
 }
 
-+(NSMutableArray*)modelArrayWithDictArray:(NSArray*)response containDict:(NSDictionary*)dict;{
++(id)modelArrayWithDictArray:(NSArray*)response containDict:(NSDictionary*)dict;{
     if (dict==nil) {
         dict=[NSMutableDictionary new];
     }
