@@ -46,7 +46,14 @@
 -(void)requestSuccessNotification{
     [self hideLoadingAnimation];
 }
-
+- (void)removeChildVc:(UIViewController *)childVc {
+    if ([childVc isKindOfClass:[UIViewController class]] == NO) {
+        return ;
+    }
+    [childVc.view removeFromSuperview];
+    [childVc willMoveToParentViewController:nil];
+    [childVc removeFromParentViewController];
+}
 - (void)addChildVc:(UIViewController *)childVc {
     if ([childVc isKindOfClass:[UIViewController class]] == NO) {
         return ;

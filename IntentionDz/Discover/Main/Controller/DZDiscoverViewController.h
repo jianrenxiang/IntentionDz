@@ -6,8 +6,8 @@
 //  Copyright © 2016年 com.ews. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DZBaseViewController.h"
 
-@interface DZDiscoverViewController : UIViewController
+@interface DZDiscoverViewController : DZBaseViewController
 
 @end

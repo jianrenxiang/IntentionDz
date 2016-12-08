@@ -99,6 +99,19 @@
 		82A262121DF545E5001EB62F /* WMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 82A262101DF545E5001EB62F /* WMPlayer.m */; };
 		82C2F8471DDD3DC800CDD92C /* NHBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C2F8461DDD3DC800CDD92C /* NHBaseModel.m */; };
 		82C2F84A1DDD40E900CDD92C /* DZFileCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C2F8491DDD40E900CDD92C /* DZFileCacheManager.m */; };
+		82C4C8D11DF8FD0500E3B7EC /* DZDiscoverSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8D01DF8FD0500E3B7EC /* DZDiscoverSearchViewController.m */; };
+		82C4C8D41DF8FDA100E3B7EC /* DZDiscoverNearByViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8D31DF8FDA100E3B7EC /* DZDiscoverNearByViewController.m */; };
+		82C4C8D71DF8FE7500E3B7EC /* DZDiscoverHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8D61DF8FE7500E3B7EC /* DZDiscoverHotViewController.m */; };
+		82C4C8DA1DF8FEB300E3B7EC /* DZDiscoverSubScribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8D91DF8FEB300E3B7EC /* DZDiscoverSubScribeViewController.m */; };
+		82C4C8DD1DF9017000E3B7EC /* DZDiscoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8DC1DF9017000E3B7EC /* DZDiscoverHeaderView.m */; };
+		82C4C8E01DF9072C00E3B7EC /* DZDiscoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8DF1DF9072C00E3B7EC /* DZDiscoverModel.m */; };
+		82C4C8E31DF9083500E3B7EC /* DZDiscoverHeaderViewViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8E21DF9083500E3B7EC /* DZDiscoverHeaderViewViewCell.m */; };
+		82C4C8E61DF908E200E3B7EC /* NHDiscoverHeaderPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8E51DF908E200E3B7EC /* NHDiscoverHeaderPageControl.m */; };
+		82C4C8E91DF93BF100E3B7EC /* DZDiscoverRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8E81DF93BF100E3B7EC /* DZDiscoverRequest.m */; };
+		82C4C8EC1DF93CC500E3B7EC /* DZDiscoverTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8EB1DF93CC500E3B7EC /* DZDiscoverTopicViewController.m */; };
+		82C4C8EF1DF93EED00E3B7EC /* DZDiscoverTopicRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8EE1DF93EED00E3B7EC /* DZDiscoverTopicRequest.m */; };
+		82C4C8F21DF9414500E3B7EC /* DZDiscoverTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8F11DF9414500E3B7EC /* DZDiscoverTableViewCell.m */; };
+		82C4C8F51DF95CE500E3B7EC /* DZDiscoverSubscribeListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C4C8F41DF95CE500E3B7EC /* DZDiscoverSubscribeListRequest.m */; };
 		82C9BDB11DF110F20006F788 /* DZDynamicDetailRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C9BDB01DF110F20006F788 /* DZDynamicDetailRequest.m */; };
 		82C9BDB41DF125070006F788 /* DZDynamicDetailCommentCellFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C9BDB31DF125070006F788 /* DZDynamicDetailCommentCellFrame.m */; };
 		82C9BDB71DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C9BDB61DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m */; };
@@ -316,6 +329,32 @@
 		82C2F8461DDD3DC800CDD92C /* NHBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHBaseModel.m; sourceTree = "<group>"; };
 		82C2F8481DDD40E900CDD92C /* DZFileCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZFileCacheManager.h; sourceTree = "<group>"; };
 		82C2F8491DDD40E900CDD92C /* DZFileCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZFileCacheManager.m; sourceTree = "<group>"; };
+		82C4C8CF1DF8FD0500E3B7EC /* DZDiscoverSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverSearchViewController.h; sourceTree = "<group>"; };
+		82C4C8D01DF8FD0500E3B7EC /* DZDiscoverSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverSearchViewController.m; sourceTree = "<group>"; };
+		82C4C8D21DF8FDA100E3B7EC /* DZDiscoverNearByViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverNearByViewController.h; sourceTree = "<group>"; };
+		82C4C8D31DF8FDA100E3B7EC /* DZDiscoverNearByViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverNearByViewController.m; sourceTree = "<group>"; };
+		82C4C8D51DF8FE7500E3B7EC /* DZDiscoverHotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverHotViewController.h; sourceTree = "<group>"; };
+		82C4C8D61DF8FE7500E3B7EC /* DZDiscoverHotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverHotViewController.m; sourceTree = "<group>"; };
+		82C4C8D81DF8FEB300E3B7EC /* DZDiscoverSubScribeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverSubScribeViewController.h; sourceTree = "<group>"; };
+		82C4C8D91DF8FEB300E3B7EC /* DZDiscoverSubScribeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverSubScribeViewController.m; sourceTree = "<group>"; };
+		82C4C8DB1DF9017000E3B7EC /* DZDiscoverHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverHeaderView.h; sourceTree = "<group>"; };
+		82C4C8DC1DF9017000E3B7EC /* DZDiscoverHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverHeaderView.m; sourceTree = "<group>"; };
+		82C4C8DE1DF9072C00E3B7EC /* DZDiscoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverModel.h; sourceTree = "<group>"; };
+		82C4C8DF1DF9072C00E3B7EC /* DZDiscoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverModel.m; sourceTree = "<group>"; };
+		82C4C8E11DF9083500E3B7EC /* DZDiscoverHeaderViewViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverHeaderViewViewCell.h; sourceTree = "<group>"; };
+		82C4C8E21DF9083500E3B7EC /* DZDiscoverHeaderViewViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverHeaderViewViewCell.m; sourceTree = "<group>"; };
+		82C4C8E41DF908E200E3B7EC /* NHDiscoverHeaderPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NHDiscoverHeaderPageControl.h; sourceTree = "<group>"; };
+		82C4C8E51DF908E200E3B7EC /* NHDiscoverHeaderPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NHDiscoverHeaderPageControl.m; sourceTree = "<group>"; };
+		82C4C8E71DF93BF100E3B7EC /* DZDiscoverRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverRequest.h; sourceTree = "<group>"; };
+		82C4C8E81DF93BF100E3B7EC /* DZDiscoverRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverRequest.m; sourceTree = "<group>"; };
+		82C4C8EA1DF93CC500E3B7EC /* DZDiscoverTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverTopicViewController.h; sourceTree = "<group>"; };
+		82C4C8EB1DF93CC500E3B7EC /* DZDiscoverTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverTopicViewController.m; sourceTree = "<group>"; };
+		82C4C8ED1DF93EED00E3B7EC /* DZDiscoverTopicRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverTopicRequest.h; sourceTree = "<group>"; };
+		82C4C8EE1DF93EED00E3B7EC /* DZDiscoverTopicRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverTopicRequest.m; sourceTree = "<group>"; };
+		82C4C8F01DF9414500E3B7EC /* DZDiscoverTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverTableViewCell.h; sourceTree = "<group>"; };
+		82C4C8F11DF9414500E3B7EC /* DZDiscoverTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverTableViewCell.m; sourceTree = "<group>"; };
+		82C4C8F31DF95CE500E3B7EC /* DZDiscoverSubscribeListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoverSubscribeListRequest.h; sourceTree = "<group>"; };
+		82C4C8F41DF95CE500E3B7EC /* DZDiscoverSubscribeListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoverSubscribeListRequest.m; sourceTree = "<group>"; };
 		82C9BDAF1DF110F20006F788 /* DZDynamicDetailRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDynamicDetailRequest.h; sourceTree = "<group>"; };
 		82C9BDB01DF110F20006F788 /* DZDynamicDetailRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDynamicDetailRequest.m; sourceTree = "<group>"; };
 		82C9BDB21DF125070006F788 /* DZDynamicDetailCommentCellFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDynamicDetailCommentCellFrame.h; sourceTree = "<group>"; };
@@ -603,6 +642,8 @@
 		8250754F1DDA979C006C81F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8D51DF8FE7500E3B7EC /* DZDiscoverHotViewController.h */,
+				82C4C8D61DF8FE7500E3B7EC /* DZDiscoverHotViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -624,6 +665,8 @@
 		825075521DDA979C006C81F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8F01DF9414500E3B7EC /* DZDiscoverTableViewCell.h */,
+				82C4C8F11DF9414500E3B7EC /* DZDiscoverTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -651,6 +694,8 @@
 		825075551DDA979C006C81F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8DE1DF9072C00E3B7EC /* DZDiscoverModel.h */,
+				82C4C8DF1DF9072C00E3B7EC /* DZDiscoverModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -665,6 +710,12 @@
 		825075571DDA979C006C81F4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8DB1DF9017000E3B7EC /* DZDiscoverHeaderView.h */,
+				82C4C8DC1DF9017000E3B7EC /* DZDiscoverHeaderView.m */,
+				82C4C8E11DF9083500E3B7EC /* DZDiscoverHeaderViewViewCell.h */,
+				82C4C8E21DF9083500E3B7EC /* DZDiscoverHeaderViewViewCell.m */,
+				82C4C8E41DF908E200E3B7EC /* NHDiscoverHeaderPageControl.h */,
+				82C4C8E51DF908E200E3B7EC /* NHDiscoverHeaderPageControl.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -683,6 +734,8 @@
 		825075591DDA979C006C81F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8D21DF8FDA100E3B7EC /* DZDiscoverNearByViewController.h */,
+				82C4C8D31DF8FDA100E3B7EC /* DZDiscoverNearByViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -690,6 +743,8 @@
 		8250755A1DDA979C006C81F4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8E71DF93BF100E3B7EC /* DZDiscoverRequest.h */,
+				82C4C8E81DF93BF100E3B7EC /* DZDiscoverRequest.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -722,6 +777,8 @@
 		8250755E1DDA979C006C81F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8CF1DF8FD0500E3B7EC /* DZDiscoverSearchViewController.h */,
+				82C4C8D01DF8FD0500E3B7EC /* DZDiscoverSearchViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -761,6 +818,8 @@
 		825075631DDA979C006C81F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8D81DF8FEB300E3B7EC /* DZDiscoverSubScribeViewController.h */,
+				82C4C8D91DF8FEB300E3B7EC /* DZDiscoverSubScribeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -775,6 +834,8 @@
 		825075651DDA979C006C81F4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8F31DF95CE500E3B7EC /* DZDiscoverSubscribeListRequest.h */,
+				82C4C8F41DF95CE500E3B7EC /* DZDiscoverSubscribeListRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -800,6 +861,8 @@
 		825075681DDA979C006C81F4 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8EA1DF93CC500E3B7EC /* DZDiscoverTopicViewController.h */,
+				82C4C8EB1DF93CC500E3B7EC /* DZDiscoverTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -814,6 +877,8 @@
 		8250756A1DDA979C006C81F4 /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				82C4C8ED1DF93EED00E3B7EC /* DZDiscoverTopicRequest.h */,
+				82C4C8EE1DF93EED00E3B7EC /* DZDiscoverTopicRequest.m */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -1599,6 +1664,7 @@
 				82D62F481DDD9602004BC4FE /* DZCustomSlideViewController.m in Sources */,
 				8251D5AA1DEBFEFA00127018 /* DZCustomWebViewController.m in Sources */,
 				828C5DE31DDBF12300081C9A /* UIView+Frame.m in Sources */,
+				82C4C8D71DF8FE7500E3B7EC /* DZDiscoverHotViewController.m in Sources */,
 				826A03741DDC57F40075D8AF /* NHCommonAPIConstant.m in Sources */,
 				826A03681DDC53FC0075D8AF /* NSString+Encrypt.m in Sources */,
 				82807F661DED75F400F03FBE /* DZHomeTableViewCellFrame.m in Sources */,
@@ -1607,25 +1673,31 @@
 				826A035D1DDC53FC0075D8AF /* NSArray+Addition.m in Sources */,
 				82807F5D1DED605600F03FBE /* DZHomeServiceDataModel.m in Sources */,
 				82690BC31DEECF220094D598 /* MJPhotoProgressView.m in Sources */,
+				82C4C8DD1DF9017000E3B7EC /* DZDiscoverHeaderView.m in Sources */,
 				82EB3AFB1DEFD4D400335923 /* DZHomeDynamicRequest.m in Sources */,
 				828C5DE91DDC0B6400081C9A /* NHHomeHeaderOptionViewItemView.m in Sources */,
 				82EB3AE81DEFB3B300335923 /* NHCustomActionSheet.m in Sources */,
 				826A035F1DDC53FC0075D8AF /* NSDictionary+Addition.m in Sources */,
 				8251D5B31DEC18F600127018 /* DZBaseTabelView.m in Sources */,
 				82807ED61DED161700F03FBE /* UIViewController+Loading.m in Sources */,
+				82C4C8E01DF9072C00E3B7EC /* DZDiscoverModel.m in Sources */,
 				821573AC1DF6615B0037EE0B /* UIBarButtonItem+Addition.m in Sources */,
 				82EB3AF51DEFC38800335923 /* FXBlurView.m in Sources */,
 				82807F5A1DED5BA300F03FBE /* DZUtils.m in Sources */,
+				82C4C8D11DF8FD0500E3B7EC /* DZDiscoverSearchViewController.m in Sources */,
 				821573B31DF6A0120037EE0B /* DZHomeAttentionListSectionHeaderView.m in Sources */,
 				826A035E1DDC53FC0075D8AF /* NSDate+Addition.m in Sources */,
 				8214028B1DD9481600BEE691 /* ViewController.m in Sources */,
 				82690BA61DEEA26D0094D598 /* UIImage+Addition.m in Sources */,
 				8251D5B01DEC042800127018 /* DZBaseTableViewCell.m in Sources */,
+				82C4C8EC1DF93CC500E3B7EC /* DZDiscoverTopicViewController.m in Sources */,
+				82C4C8E31DF9083500E3B7EC /* DZDiscoverHeaderViewViewCell.m in Sources */,
 				826A036A1DDC53FC0075D8AF /* NSString+Size.m in Sources */,
 				8250758F1DDAA646006C81F4 /* DZBaseNavigationViewController.m in Sources */,
 				82690BAA1DEEA26D0094D598 /* UIImageView+LBBlurredImage.m in Sources */,
 				820BB6E11DDED1DE00AF6A18 /* DZHomeBaseViewController.m in Sources */,
 				82C9BDB41DF125070006F788 /* DZDynamicDetailCommentCellFrame.m in Sources */,
+				82C4C8F21DF9414500E3B7EC /* DZDiscoverTableViewCell.m in Sources */,
 				826A03711DDC572E0075D8AF /* DZServiceListRequest.m in Sources */,
 				826A03671DDC53FC0075D8AF /* NSString+Addition.m in Sources */,
 				82D62F451DDD83EA004BC4FE /* DZBaseViewController.m in Sources */,
@@ -1641,6 +1713,7 @@
 				8250758A1DDA9C03006C81F4 /* DZMainTabbarViewController.m in Sources */,
 				825075921DDAA926006C81F4 /* DZHomeViewController.m in Sources */,
 				82C9BDB71DF14BCC0006F788 /* DZDynamicDetailCommentTableViewCell.m in Sources */,
+				82C4C8F51DF95CE500E3B7EC /* DZDiscoverSubscribeListRequest.m in Sources */,
 				8251D5B61DEC2EBF00127018 /* DZCustomLoadingAnimationView.m in Sources */,
 				826A037A1DDC5A830075D8AF /* NHServiceListModel.m in Sources */,
 				826A036E1DDC54850075D8AF /* DZCommonConstant.m in Sources */,
@@ -1650,6 +1723,7 @@
 				82EB3AEE1DEFB56600335923 /* MBProgressHUD+NHAddition.m in Sources */,
 				828C5DEF1DDC3CB500081C9A /* DZRquestManager.m in Sources */,
 				82690B9A1DEE86120094D598 /* DZBaseImageView.m in Sources */,
+				82C4C8EF1DF93EED00E3B7EC /* DZDiscoverTopicRequest.m in Sources */,
 				821573AD1DF6615B0037EE0B /* UIButton+Addition.m in Sources */,
 				825075981DDAA96C006C81F4 /* DZCheckViewController.m in Sources */,
 				826A03651DDC53FC0075D8AF /* NSObject+Runtime.m in Sources */,
@@ -1668,14 +1742,18 @@
 				825075AE1DDABAE4006C81F4 /* UIView+Layer.m in Sources */,
 				8251D5AD1DEC037500127018 /* DZBaseTableViewController.m in Sources */,
 				82C9BDB11DF110F20006F788 /* DZDynamicDetailRequest.m in Sources */,
+				82C4C8E61DF908E200E3B7EC /* NHDiscoverHeaderPageControl.m in Sources */,
+				82C4C8D41DF8FDA100E3B7EC /* DZDiscoverNearByViewController.m in Sources */,
 				829B3D131DF7E76E00852086 /* DZHomeAttentionEmptyView.m in Sources */,
 				826A035C1DDC53FC0075D8AF /* NSNotificationCenter+Addition.m in Sources */,
 				8250759D1DDAAA07006C81F4 /* DZMessageViewController.m in Sources */,
+				82C4C8DA1DF8FEB300E3B7EC /* DZDiscoverSubScribeViewController.m in Sources */,
 				82690BC51DEECF220094D598 /* MJPhotoView.m in Sources */,
 				826A03691DDC53FC0075D8AF /* NSString+Extension.m in Sources */,
 				825075951DDAA955006C81F4 /* DZDiscoverViewController.m in Sources */,
 				826A03661DDC53FC0075D8AF /* NSAttributedString+Size.m in Sources */,
 				829B3D1F1DF8041700852086 /* DZUserInfoManager.m in Sources */,
+				82C4C8E91DF93BF100E3B7EC /* DZDiscoverRequest.m in Sources */,
 				826A03611DDC53FC0075D8AF /* NSObject+AddProperty.m in Sources */,
 				82690BA81DEEA26D0094D598 /* UIImage+ImageEffects.m in Sources */,
 				826A03601DDC53FC0075D8AF /* NSFileManager+Paths.m in Sources */,

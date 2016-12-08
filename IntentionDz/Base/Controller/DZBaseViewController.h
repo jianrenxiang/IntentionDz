@@ -15,4 +15,5 @@
 - (void)presentVc:(UIViewController *)vc;
 - (void)presentVc:(UIViewController *)vc completion:(void (^)(void))completion;
 - (void)addChildVc:(UIViewController *)childVc;
+- (void)removeChildVc:(UIViewController *)childVc;
 @end
